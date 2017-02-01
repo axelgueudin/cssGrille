@@ -1,0 +1,132 @@
+@import "librairies/normalize.css";
+figure {
+    margin: 0 0 1.5em;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: padauk;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.66em;
+    line-height: 1em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+dl > dl {
+    font-style: italic;
+}
+
+/**
+* Déclaration de la grille
+**/
+
+.wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    /*outline: 1px solid red;*/
+}
+
+@media only screen and ( min-width: 34em) {
+    .column-4-12 {
+        width: 100%;
+    }
+    .column {
+        box-sizing: border-box;
+        float: left;
+        /** Gouttières **/
+        padding-left: .5em;
+        padding-right: .5em;
+        /*outline: 1px solid green;*/
+    }
+    .wrapper {
+    width: 17rem;
+}
+
+@media only screen and ( min-width: 48em) {
+    .column-4-12 {
+        width: 100%;
+    }
+    .column {
+        box-sizing: border-box;
+        float: left;
+        /** Gouttières **/
+        padding-left: .5em;
+        padding-right: .5em;
+        /*outline: 1px solid green;*/
+    }
+    .wrapper {
+    width: 34rem;
+}
+
+@media only screen and ( min-width: 62em) {
+    .column-4-12 {
+        width: 50%;
+    }
+    .column {
+        box-sizing: border-box;
+        float: left;
+        /** Gouttières **/
+        padding-left: .5em;
+        padding-right: .5em;
+        /*outline: 1px solid green;*/
+    }
+    .wrapper {
+    width: 48rem;
+}
+}
+
+@media only screen and ( min-width: 75em) {
+    .column:nth-child(4n){ clear: left;}
+    .column-4-12 {
+        width: 33.33%;
+    }
+    .column {
+        box-sizing: border-box;
+        float: left;
+        /** Gouttières **/
+        padding-left: 1em;
+        padding-right: 1em;
+        /*outline: 1px solid green;*/
+    }
+    .wrapper {width: 75rem;}
+}
+
+
+/** 1/12 = 8.3334%**/
+
+.column-3-12 {
+    width: 25%;
+}
+
+
+/*
+.column-4-12 {
+    width: 33.33%;
+}*/
+
+.column-8-12 {
+    width: 66.66%;
+}
+
+
+/** Utilitaire **/
+
+.clear {
+    clear: both;
+}
+
+.wrapper img {
+    width: 100%;
+}
